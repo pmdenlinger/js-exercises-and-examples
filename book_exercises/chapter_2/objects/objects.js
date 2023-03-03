@@ -34,4 +34,28 @@ console.log(person2.isDead);
 // Objects can be written in one line. Harder to read.
 let person3 = { firstName: "Thomas", lastName: "J" };
 
+console.log(person2["firstName"]);
+console.log(person2["lastName"]);
+console.log(person2["isTrue"]);
+
+let dogName = "Flash";
+let dogAge = 2;
+
+let dogObj = {
+  dogName = "Flash",
+  dogAge = 2,
+}
+
+let firstObj = {
+  color: "green",
+  shape: "square",
+}
+
+let secondObj = firstObj;
+
+firstObj.border = "solid";
+
+console.log(firstObj);
+console.log(secondObj);
+
 
