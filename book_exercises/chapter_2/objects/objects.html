@@ -7,7 +7,98 @@
     <title>Objects</title>
   </head>
   <body>
-    <h1>This is an object</h1>
-    <script src="./objects.js"></script>
+    <script>
+      let person = {
+        name: "Jason",
+        age: 33,
+        isMarried: true,
+      };
+
+      let person1 = {
+        name: "Jason",
+        age: 33,
+        isMarried: true,
+        working: function () {
+          console.log("As a programmer and web dev");
+        },
+      };
+
+      let empObj = new Object();
+
+      // Empty object
+      let emObj = {};
+      // add new properties
+      emObj.name = "Rick";
+      console.log(emObj);
+
+      let person2 = {
+        firstName: "Thomas",
+        lastName: "Jefferson",
+        isDead: false,
+      };
+
+      console.log(person2.firstName);
+      console.log(person2.lastName);
+      console.log(person2.isDead);
+
+      console.log(person2["firstName"]);
+      console.log(person2["lastName"]);
+      console.log(person2["isDead"]);
+
+      let dogName = "Flash";
+      let dogAge = 2;
+
+      let dogObj = {
+        name: "Flash",
+        age: 2,
+      };
+
+      let firstObj = {
+        color: "green",
+        shape: "square",
+      };
+
+      let secondObj = firstObj;
+      firstObj.border = "solid";
+
+      console.log(firstObj);
+      console.log(secondObj);
+
+      console.log(firstObj == secondObj);
+      console.log(firstObj === secondObj);
+
+      let thirdObj = {
+        width: "40px",
+        height: "40px",
+      };
+
+      let fourthObj = {
+        width: "40px",
+        height: "40px",
+      };
+
+      console.log(thirdObj == fourthObj);
+      console.log(thirdObj === fourthObj);
+
+      let numberOne = 90;
+      let numberTwo = numberOne;
+      console.log(numberOne);
+      console.log(numberTwo);
+
+      numberOne = numberOne + 10;
+      console.log(numberOne);
+      console.log(numberTwo);
+
+      let fifthObj = {
+        width: "40px",
+        height: "40px",
+      };
+
+      // Creating clone or exact copy of fifth object
+      let sixthObj = Object.assign({}, fifthObj);
+      fifthObj.color = "yellow";
+      console.log(fifthObj);
+      console.log(sixthObj);
+    </script>
   </body>
 </html>
