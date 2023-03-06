@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operators</title>
+  </head>
+  <body>
+    <script>
+      let a = 13;
+      let b = 4;
+      console.log(a + b);
+      console.log(a - b);
+      console.log(a * b);
+      console.log(a / b);
+      console.log(a % b);
+
+      // increment and decrement
+      let one = 10;
+      let two = 10;
+      let three = 10;
+      let four = 10;
+
+      console.log(one++);
+      console.log(two--);
+      console.log(++three);
+      console.log(++four);
+
+      // logical and/or operator
+      let c = true;
+      let d = false;
+      let f = true;
+      let g = false;
+      console.log(c && d);
+      console.log(d && f);
+      console.log(d && g);
+      console.log(c && f);
+      console.log("------------");
+      console.log(c || d);
+      console.log(d || f);
+      console.log(d || g);
+      console.log(c || f);
+      console.log("------------");
+      console.log(!c);
+      console.log(!d);
+      // compound operator
+      console.log("------------");
+      let i = 10;
+      i += 10;
+      console.log(i);
+      console.log((i -= 10));
+      console.log((i *= 10));
+      console.log((i /= 10));
+      console.log((i %= 10));
+      // ternary operator
+      let base = 5;
+      let myCondition = 10;
+      let result =
+        base > myCondition
+          ? "The Base is greater than the condition(10)"
+          : "The base is less than 10";
+      console.log(result);
+    </script>
+  </body>
+</html>
