@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript String Methods</title>
+  </head>
+  <body>
+    <script>
+      // String length
+      const str = "This is a string";
+      console.log(str.length);
+      // Remove white spaces
+      const str1 = "   String contains white spaces.   ";
+      console.log(str1.trim());
+      // Is substring contained in a larger string?
+      const str2 = "My name is Saul Goodman";
+      const searchTerm1 = "Good";
+      const searchTerm2 = "Man";
+      console.log(str2.includes(searchTerm1));
+      console.log(str2.includes(searchTerm2));
+      //indexOf()
+      const str3 = "My name is Saul Goodman";
+      const searchTerm3 = "Good";
+      const searchTerm4 = "Man";
+      console.log(str3.indexOf(searchTerm3));
+      console.log(str3.indexOf(searchTerm4));
+      // toUpperCase()
+      const str4 = "My name is Saul Goodman";
+      console.log(str4.toUpperCase());
+      // toLowerCase()
+      const str5 = "My name is Saul Goodman";
+      console.log(str5.toLowerCase());
+      // replace()
+      const str6 = "Hi there!";
+      const strPattern = "there";
+      const replaceString = "folks";
+      console.log(str6.replace(strPattern, replaceString));
+      // slice()
+      const str7 = "My name is Rick Grimes";
+      console.log(str7.slice(11));
+      console.log(str7.slice(11, 15));
+      // split() to return strings as part of array
+      const str8 = "My name is Rick Grimes";
+      const stringArray = str8.split(" ");
+      console.log(stringArray);
+      // repeat()
+      const str9 = "Repeat! ";
+      console.log(str9.repeat(4));
+      // match() returns array of strings against regex
+      const str10 = "This is the best guide. I Love It!";
+      const regex = /[A-Z]/g;
+      const matches = str10.match(regex);
+      console.log(matches);
+      //charAt()
+      const str11 = "Rick Grimes";
+      console.log(str11.charAt(0));
+      console.log(str11.charAt(1));
+      console.log(str11.charAt(2));
+      console.log(str11.charAt(3));
+      console.log(str11.charAt(4));
+      console.log(str11.charAt(5));
+      //charCodeAt() returns Unicode
+      const str12 = "Rick Grimes";
+      console.log(str12.charCodeAt(0));
+      console.log(str12.charCodeAt(1));
+    </script>
+  </body>
+</html>
