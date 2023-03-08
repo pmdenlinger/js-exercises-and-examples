@@ -7,6 +7,62 @@
     <title>Functions</title>
   </head>
   <body>
-    <script></script>
+    <script>
+      function message() {
+        console.log(`Hello world!`);
+      }
+      message();
+
+      function personalMessage(personName) {
+        console.log(`Hello ${personName}`);
+      }
+      personalMessage("Novak");
+
+      let age = 34;
+      function personalMessage1(personAge) {
+        console.log(`The person is ${personAge - 10}`);
+      }
+      personalMessage1(age);
+      console.log(age);
+
+      let carBrands = [
+        "Alfa Romeo",
+        "Audi",
+        "BMW",
+        "Bentley",
+        "Buick",
+        "Cadillac",
+      ];
+      console.log(`1) Original Car Brand Array`);
+      console.log(carBrands);
+      function addCar(carBrands) {
+        carBrands.push("GWM Haval");
+        console.log(`2) Array added with new element added in the function`);
+        console.log(carBrands);
+      }
+
+      addCar(carBrands);
+      console.log(`3) Print the array after the function is finished`);
+      console.log(carBrands);
+
+      const myMessage = function aMessage(messageBody) {
+        console.log(messageBody);
+      };
+      myMessage(
+        `Another way to declare a function is by using a function expression`
+      );
+
+      const myMessage1 = function (messageBody) {
+        console.log(messageBody);
+      };
+      myMessage1(`Anonymous function`);
+
+      const myMessage2 = (messageBody) => {
+        console.log(messageBody);
+      };
+      myMessage2(
+        `Another way to declare a function is by using an arrow function expression`
+      );
+    </script>
   </body>
 </html>
