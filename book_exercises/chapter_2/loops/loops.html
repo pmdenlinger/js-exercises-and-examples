@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loops</title>
+  </head>
+  <body>
+    <script>
+      // let number = parseInt(prompt("Enter a number"));
+      // document.write(`
+      // <h2>Even numbers from 0 to ${number} are</h2>
+      // `);
+      // let i = 0;
+      // while (i <= number) {
+      //   document.write(i + "<br />");
+      //   i += 2;
+      // }
+      // let number1 = parseInt(prompt("Enter a number"));
+      // document.write(`
+      // <h2>Odd numbers from 1 to ${number1} are:</h2>`);
+      // let j = 1;
+      // do {
+      //   if (j % 2 != 0) {
+      //     document.write(j + `<br />`);
+      //   }
+      //   j += 1;
+      // } while (j <= number1);
+
+      // let number2 = parseInt(prompt(`Enter a number`));
+      //   document.write(`<h2>For-loop: Even numbers from 0 to ${number2} are </h2>);
+
+      //   for(let i = 0;i <= number2;i + =2) {
+      //     document.write(i + "<br/>");
+      //   }
+
+      // for loop and cars array
+      // const cars = [
+      //   "Audi",
+      //   "Mercedes",
+      //   "Cadillac",
+      //   "Bentley",
+      //   "Toyota",
+      //   "Haval",
+      //   "Kia",
+      //   "BMW",
+      //   "Volvo",
+      //   "Saab",
+      //   "Ford",
+      // ];
+
+      // document.write(
+      //   `<h2>Print all of the array items using the for loop: </h2>`
+      // );
+      // for (let i = 1; i < cars.length; i++) {
+      //   document.write(i + `: ${cars[i]} <br/>`);
+      // }
+      // break statement
+      // for (let i = 0; i <= 10; i++) {
+      //   if (i == 7) break;
+      //   document.write(i + `<br/>`);
+      // }
+      // document.write(`This text will be written after the i = 6`);
+
+      // nested loop with break labels
+      document.write(`<h2>Break with optional label reference</h2>`);
+      // The first for loop is labeled with firstLoop
+      firstLoop: for (let i = 0; i < 4; i++) {
+        document.write(`Outer loop: ${i} <br/>`);
+
+        // Second loop
+        secondLoop: for (let i = 10; i < 15; i++) {
+          document.write(`Inner loop: ${i} <br/>`);
+          if (i === 13) break firstLoop;
+        }
+      }
+    </script>
+  </body>
+</html>
